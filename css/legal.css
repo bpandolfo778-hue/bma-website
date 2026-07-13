@@ -1,0 +1,131 @@
+/* ============================================================
+   BMA CONSULTANTS — Legal Pages (Privacy / Terms)
+   ============================================================ */
+
+.legal-hero {
+  position: relative;
+  padding-top: calc(68px + clamp(48px,7vw,88px));
+  padding-bottom: clamp(40px,6vw,64px);
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.legal-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 20% 0%, rgba(94,230,197,.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.legal-hero-inner { position: relative; z-index: 1; max-width: 720px; }
+
+.legal-hero h1 {
+  font-size: clamp(2rem,4vw,2.8rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.legal-updated {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  color: var(--muted);
+  letter-spacing: .04em;
+}
+
+.legal-content {
+  padding-block: clamp(48px,7vw,88px);
+}
+
+.legal-content .container {
+  max-width: 760px;
+}
+
+.legal-body h2 {
+  font-size: clamp(1.3rem,2.2vw,1.6rem);
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  scroll-margin-top: 90px;
+}
+.legal-body > h2:first-child { margin-top: 0; }
+
+.legal-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.legal-body p {
+  color: var(--muted);
+  font-size: .96rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.legal-body strong { color: var(--text); }
+
+.legal-body a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+.legal-body a:hover { color: #7AEDCE; }
+
+.legal-body ul, .legal-body ol {
+  color: var(--muted);
+  font-size: .96rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  padding-left: 22px;
+}
+.legal-body li { margin-bottom: 8px; }
+
+.legal-callout {
+  background: var(--bg);
+  border: 1px solid rgba(94,230,197,.3);
+  border-left: 3px solid var(--teal);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+.legal-callout p { margin-bottom: 10px; color: var(--text); font-size: .93rem; }
+.legal-callout p:last-child { margin-bottom: 0; }
+
+.legal-toc {
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 40px;
+}
+.legal-toc h2 {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.legal-toc ol {
+  list-style: decimal;
+  padding-left: 20px;
+  margin: 0;
+  columns: 2;
+  column-gap: 24px;
+}
+.legal-toc li { margin-bottom: 8px; font-size: .88rem; }
+.legal-toc a { color: var(--muted); }
+.legal-toc a:hover { color: var(--teal); }
+
+.legal-contact-box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  margin-top: 48px;
+}
+.legal-contact-box p { margin-bottom: 8px; }
+.legal-contact-box p:last-child { margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .legal-toc ol { columns: 1; }
+}
